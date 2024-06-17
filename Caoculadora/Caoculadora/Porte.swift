@@ -8,9 +8,9 @@
 import Foundation
 
 enum Porte: String, CaseIterable {
-    case pequeno = "Pequeno"
-    case medio = "Médio"
-    case grande = "Grande"
+    case pequenito = "Pequeno"
+    case mediano = "Médio"
+    case grandito = "Grande"
 
     func calcularIdade(deAnos anosCaninos: Int,
                       eMeses mesesCaninos: Int) -> Int {
@@ -19,11 +19,11 @@ enum Porte: String, CaseIterable {
         let multiplicador: Int
         
         switch self {
-        case .pequeno:
+        case .pequenito:
             multiplicador = 6
-        case .medio:
+        case .mediano:
             multiplicador = 7
-        case .grande:
+        case .grandito:
             multiplicador = 8
         }
 
