@@ -20,11 +20,11 @@ enum Porte: String, CaseIterable {
         
         switch self {
         case .small:
-            multiplicador = 10
+            multiplicador = 1
         case .medium:
-            multiplicador = 20
+            multiplicador = 2
         case .big:
-            multiplicador = 30
+            multiplicador = 3
         }
 
         return anosCaninos * multiplicador + mesesCaninos * multiplicador / 12
