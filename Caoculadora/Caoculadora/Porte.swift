@@ -4,10 +4,13 @@
 //
 //  Created by Francisco Miranda Soares on 13/05/24.
 //
+//
+//
 
 import Foundation
 
 enum Porte: String, CaseIterable {
+    
     case small = "Pequeno"
     case medium = "Médio"
     case large = "Grande"
@@ -24,11 +27,11 @@ enum Porte: String, CaseIterable {
             multiplicador = 2
         case .large:
             multiplicador = 3
+
         }
 
-        let result = anosCaninos * multiplicador + mesesCaninos * multiplicador / 12
+        return anosCaninos * multiplicador + mesesCaninos * multiplicador / 12
         
-        return result
         
         
     }
