@@ -26,9 +26,7 @@ enum Porte: String, CaseIterable {
             multiplicador = 3
         }
 
-        let result = anosCaninos * multiplicador + mesesCaninos * multiplicador / 12
-        
-        return result
+       return anosCaninos * multiplicador + mesesCaninos * multiplicador / 12
         
         
     }
