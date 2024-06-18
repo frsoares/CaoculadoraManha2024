@@ -8,6 +8,7 @@
 import Foundation
 
 enum Porte: String, CaseIterable {
+    
     case small = "Pequeno"
     case medium = "Médio"
     case large = "Grande"
@@ -25,11 +26,11 @@ enum Porte: String, CaseIterable {
             multiplicador = 2
         case .large:
             multiplicador = 3
+
         }
 
-        let result = anosCaninos * multiplicador + mesesCaninos * multiplicador / 12
         
-        return result
+        return anosCaninos * multiplicador + mesesCaninos * multiplicador / 12
         
         
     }
