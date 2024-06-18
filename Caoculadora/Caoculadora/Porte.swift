@@ -25,6 +25,7 @@ enum Porte: String, CaseIterable {
             multiplicador = 2
         case .big:
             multiplicador = 3
+
         }
 
         return anosCaninos * multiplicador + mesesCaninos * multiplicador / 12
