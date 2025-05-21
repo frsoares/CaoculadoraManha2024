@@ -81,9 +81,47 @@ struct LastCalcWidget: Widget {
     }
 }
 
-#Preview(as: .systemSmall) {
+#Preview("Pequeno", as: .systemSmall) {
     LastCalcWidget()
 } timeline: {
     SimpleEntry(date: .now, result: 28)
-    SimpleEntry(date: .now, result: 21)
 }
+
+#Preview("Médio", as: .systemMedium) {
+    LastCalcWidget()
+} timeline: {
+    SimpleEntry(date: .now, result: 28)
+}
+
+
+#Preview("Grande", as: .systemLarge) {
+    LastCalcWidget()
+} timeline: {
+    SimpleEntry(date: .now, result: 28)
+}
+
+#Preview("Gigante", as: .systemExtraLarge) {
+    LastCalcWidget()
+} timeline: {
+    SimpleEntry(date: .now, result: 28)
+}
+
+#Preview("Circular", as: .accessoryCircular) {
+    LastCalcWidget()
+} timeline: {
+    SimpleEntry(date: .now, result: 28)
+}
+
+#Preview("Inline", as: .accessoryInline) {
+    LastCalcWidget()
+} timeline: {
+    SimpleEntry(date: .now, result: 28)
+}
+
+#Preview("Retangular", as: .accessoryRectangular) {
+    LastCalcWidget()
+} timeline: {
+    SimpleEntry(date: .now, result: 28)
+}
+
+
