@@ -6,6 +6,7 @@
 //
 
 import SwiftUI
+import WidgetKit
 
 //MARK: - View
 
@@ -13,11 +14,18 @@ struct ContentView: View {
 
     @State var years: Int?
     @State var months: Int?
-    @State var result: Int?
+    @State var result: Int? {
+        didSet {
+            defaults?.set(result, forKey: "result")
+            WidgetCenter.shared.reloadAllTimelines()
+        }
+    }
 
     @State var porteSelected = Porte.pequeno
     @State var failedInput = false
     let tituloPreencherCampos = "Preencha os campos para cãocular!"
+
+    let defaults = UserDefaults(suiteName: "group.br.ufpe.cin.fmssn.Caoculadora")
 
     var body: some View {
         NavigationStack {

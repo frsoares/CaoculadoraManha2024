@@ -3,10 +3,15 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 70;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB212C722DDBB0C90046949A /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB212C712DDBB0C90046949A /* WidgetKit.framework */; };
+		DB212C742DDBB0C90046949A /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DB212C732DDBB0C90046949A /* SwiftUI.framework */; };
+		DB212C812DDBB0CB0046949A /* LastCalcWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = DB212C6F2DDBB0C90046949A /* LastCalcWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		DB212C872DDBB1090046949A /* Porte.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA628D22BF24E0200C7BD40 /* Porte.swift */; };
+		DB212C882DDBB1100046949A /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA628D42BF25BF500C7BD40 /* StyleGuide.swift */; };
 		DB89E9B02BEA6D2D0066991A /* CaoculadoraApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB89E9AF2BEA6D2D0066991A /* CaoculadoraApp.swift */; };
 		DB89E9B22BEA6D2D0066991A /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB89E9B12BEA6D2D0066991A /* ContentView.swift */; };
 		DB89E9B42BEA6D2F0066991A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DB89E9B32BEA6D2F0066991A /* Assets.xcassets */; };
@@ -15,7 +20,36 @@
 		DBA628D52BF25BF500C7BD40 /* StyleGuide.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBA628D42BF25BF500C7BD40 /* StyleGuide.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		DB212C7F2DDBB0CB0046949A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DB89E9A42BEA6D2D0066991A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DB212C6E2DDBB0C90046949A;
+			remoteInfo = LastCalcWidgetExtension;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		DB212C822DDBB0CB0046949A /* Embed Foundation Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				DB212C812DDBB0CB0046949A /* LastCalcWidgetExtension.appex in Embed Foundation Extensions */,
+			);
+			name = "Embed Foundation Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		DB212C6F2DDBB0C90046949A /* LastCalcWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = LastCalcWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		DB212C712DDBB0C90046949A /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
+		DB212C732DDBB0C90046949A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
+		DB212C892DDBBF980046949A /* Caoculadora.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Caoculadora.entitlements; sourceTree = "<group>"; };
+		DB212C8A2DDBBFCA0046949A /* LastCalcWidgetExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = LastCalcWidgetExtension.entitlements; sourceTree = "<group>"; };
 		DB89E9AC2BEA6D2D0066991A /* Caoculadora.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Caoculadora.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DB89E9AF2BEA6D2D0066991A /* CaoculadoraApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CaoculadoraApp.swift; sourceTree = "<group>"; };
 		DB89E9B12BEA6D2D0066991A /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -25,7 +59,30 @@
 		DBA628D42BF25BF500C7BD40 /* StyleGuide.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StyleGuide.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
+/* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
+		DB212C852DDBB0CB0046949A /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
+			membershipExceptions = (
+				Info.plist,
+			);
+			target = DB212C6E2DDBB0C90046949A /* LastCalcWidgetExtension */;
+		};
+/* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		DB212C752DDBB0C90046949A /* LastCalcWidget */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (DB212C852DDBB0CB0046949A /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = LastCalcWidget; sourceTree = "<group>"; };
+/* End PBXFileSystemSynchronizedRootGroup section */
+
 /* Begin PBXFrameworksBuildPhase section */
+		DB212C6C2DDBB0C90046949A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB212C742DDBB0C90046949A /* SwiftUI.framework in Frameworks */,
+				DB212C722DDBB0C90046949A /* WidgetKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB89E9A92BEA6D2D0066991A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -36,10 +93,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		DB212C702DDBB0C90046949A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DB212C712DDBB0C90046949A /* WidgetKit.framework */,
+				DB212C732DDBB0C90046949A /* SwiftUI.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		DB89E9A32BEA6D2D0066991A = {
 			isa = PBXGroup;
 			children = (
+				DB212C8A2DDBBFCA0046949A /* LastCalcWidgetExtension.entitlements */,
 				DB89E9AE2BEA6D2D0066991A /* Caoculadora */,
+				DB212C752DDBB0C90046949A /* LastCalcWidget */,
+				DB212C702DDBB0C90046949A /* Frameworks */,
 				DB89E9AD2BEA6D2D0066991A /* Products */,
 			);
 			sourceTree = "<group>";
@@ -48,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				DB89E9AC2BEA6D2D0066991A /* Caoculadora.app */,
+				DB212C6F2DDBB0C90046949A /* LastCalcWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -55,6 +125,7 @@
 		DB89E9AE2BEA6D2D0066991A /* Caoculadora */ = {
 			isa = PBXGroup;
 			children = (
+				DB212C892DDBBF980046949A /* Caoculadora.entitlements */,
 				DB89E9AF2BEA6D2D0066991A /* CaoculadoraApp.swift */,
 				DB89E9B12BEA6D2D0066991A /* ContentView.swift */,
 				DBA628D22BF24E0200C7BD40 /* Porte.swift */,
@@ -76,6 +147,28 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		DB212C6E2DDBB0C90046949A /* LastCalcWidgetExtension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DB212C862DDBB0CB0046949A /* Build configuration list for PBXNativeTarget "LastCalcWidgetExtension" */;
+			buildPhases = (
+				DB212C6B2DDBB0C90046949A /* Sources */,
+				DB212C6C2DDBB0C90046949A /* Frameworks */,
+				DB212C6D2DDBB0C90046949A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			fileSystemSynchronizedGroups = (
+				DB212C752DDBB0C90046949A /* LastCalcWidget */,
+			);
+			name = LastCalcWidgetExtension;
+			packageProductDependencies = (
+			);
+			productName = LastCalcWidgetExtension;
+			productReference = DB212C6F2DDBB0C90046949A /* LastCalcWidgetExtension.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
 		DB89E9AB2BEA6D2D0066991A /* Caoculadora */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = DB89E9BA2BEA6D2F0066991A /* Build configuration list for PBXNativeTarget "Caoculadora" */;
@@ -83,10 +176,12 @@
 				DB89E9A82BEA6D2D0066991A /* Sources */,
 				DB89E9A92BEA6D2D0066991A /* Frameworks */,
 				DB89E9AA2BEA6D2D0066991A /* Resources */,
+				DB212C822DDBB0CB0046949A /* Embed Foundation Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				DB212C802DDBB0CB0046949A /* PBXTargetDependency */,
 			);
 			name = Caoculadora;
 			productName = Caoculadora;
@@ -100,9 +195,12 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1530;
+				LastSwiftUpdateCheck = 1630;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
+					DB212C6E2DDBB0C90046949A = {
+						CreatedOnToolsVersion = 16.3;
+					};
 					DB89E9AB2BEA6D2D0066991A = {
 						CreatedOnToolsVersion = 15.3;
 					};
@@ -122,11 +220,19 @@
 			projectRoot = "";
 			targets = (
 				DB89E9AB2BEA6D2D0066991A /* Caoculadora */,
+				DB212C6E2DDBB0C90046949A /* LastCalcWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		DB212C6D2DDBB0C90046949A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB89E9AA2BEA6D2D0066991A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -139,6 +245,15 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
+		DB212C6B2DDBB0C90046949A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DB212C872DDBB1090046949A /* Porte.swift in Sources */,
+				DB212C882DDBB1100046949A /* StyleGuide.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		DB89E9A82BEA6D2D0066991A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -152,7 +267,73 @@
 		};
 /* End PBXSourcesBuildPhase section */
 
+/* Begin PBXTargetDependency section */
+		DB212C802DDBB0CB0046949A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DB212C6E2DDBB0C90046949A /* LastCalcWidgetExtension */;
+			targetProxy = DB212C7F2DDBB0CB0046949A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
 /* Begin XCBuildConfiguration section */
+		DB212C832DDBB0CB0046949A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = LastCalcWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3AMBC8TS93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LastCalcWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LastCalcWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.Caoculadora.LastCalcWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		DB212C842DDBB0CB0046949A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
+				CODE_SIGN_ENTITLEMENTS = LastCalcWidgetExtension.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 3AMBC8TS93;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = LastCalcWidget/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = LastCalcWidget;
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = br.ufpe.cin.fmssn.Caoculadora.LastCalcWidget;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
 		DB89E9B82BEA6D2F0066991A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -277,6 +458,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Caoculadora/Caoculadora.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Caoculadora/Preview Content\"";
@@ -306,6 +488,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Caoculadora/Caoculadora.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Caoculadora/Preview Content\"";
@@ -333,6 +516,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		DB212C862DDBB0CB0046949A /* Build configuration list for PBXNativeTarget "LastCalcWidgetExtension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DB212C832DDBB0CB0046949A /* Debug */,
+				DB212C842DDBB0CB0046949A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		DB89E9A72BEA6D2D0066991A /* Build configuration list for PBXProject "Caoculadora" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
